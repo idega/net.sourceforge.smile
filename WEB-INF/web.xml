@@ -5,7 +5,6 @@
     "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
-    <description>Smile demos</description>
 
     <context-param>
         <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
@@ -93,41 +92,36 @@
         <filter-name>WelcomeFile Filter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    -->
 
     <filter-mapping>
         <filter-name>multipartFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+	-->
 
 
-
-    <!-- Listener, that does all the startup work (configuration, init). -->
+    <!-- Listener, that does all the startup work (configuration, init). 
+    - Commented out, defined in myfaces
     <listener>
         <listener-class>net.sourceforge.myfaces.webapp.StartupServletContextListener</listener-class>
     </listener>
+    -->
     <listener>
         <listener-class>net.sourceforge.smile.application.SmileInstaller</listener-class>
     </listener>
-    <listener>
-        <listener-class>com.idega.faces.IWApplicationListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>com.idega.faces.smile.IWInstaller</listener-class>
-    </listener>
 
 
-    <!-- Faces Servlet -->
+    <!-- Faces Servlet - Commented out for now, defined in myfaces
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>net.sourceforge.myfaces.webapp.MyFacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
-
+	-->
 
     <!-- Faces Servlet Mapping -->
 
-    <!-- virtual path mapping -->
+    <!-- virtual path mapping - Commented out for now, defined in myfaces
     <!--
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
@@ -135,25 +129,19 @@
     </servlet-mapping>
     -->
 
-    <!-- extension mapping -->
+    <!-- extension mapping - Commented out for now, defined in myfaces
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.jsf</url-pattern>
     </servlet-mapping>
-    <!-- idegaWeb URLs: -->
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/pages/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/window/*</url-pattern>
-    </servlet-mapping>
+    -->
 
-    <!-- Welcome files -->
+    <!-- Welcome files - Commented out for now
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+    -->
+    
 </web-app>
