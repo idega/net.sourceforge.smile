@@ -1,6 +1,6 @@
 <project>
     <pomVersion>3</pomVersion>
-  	<extend>${base.project.dir}/base-project.xmlend>    
+  	<extend>${base.project.dir}/base-project.xml</extend>    
     <name>Smile</name>
     <groupId>bundles</groupId>
     <artifactId>net.sourceforge.smile</artifactId>
