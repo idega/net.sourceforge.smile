@@ -2,7 +2,7 @@
     <extend>../com.idega.core.bundle/base-project.xml</extend>
     <name>idegaWeb WebFace</name>
     <groupId>bundles</groupId>
-    <artifactId>net.sourceforte.smile</artifactId>
+    <artifactId>net.sourceforge.smile</artifactId>
     <currentVersion>0.3</currentVersion>
     <inceptionYear>2003</inceptionYear>
     <shortDescription>Smile is an implementation of JavaServer Faces</shortDescription>
