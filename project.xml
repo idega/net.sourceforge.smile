@@ -33,12 +33,34 @@
     </developers>
     <dependencies>
         <dependency>
+            <groupId>smile</groupId>
+            <artifactId>smile</artifactId>
+            <version>0.3.2</version>
+            <type>jar</type>
+            <url>http://smile.sourceforge.net/</url>
+            <properties>
+            		<idegaweb.bundle.include>true</idegaweb.bundle.include>
+            </properties>
+        </dependency>
+        <dependency>
+            <groupId>myfaces</groupId>
+            <artifactId>myfaces</artifactId>
+            <version>1.0.5</version>
+            <type>jar</type>
+            <url>http://www.myfaces.org/</url>
+            <properties>
+            		<idegaweb.bundle.include>true</idegaweb.bundle.include>
+            </properties>
+        </dependency>        
+        <dependency>
             <groupId>jdom</groupId>
             <artifactId>jdom</artifactId>
             <version>b9-rc2</version>
             <type>jar</type>
             <url>http://www.jdom.org/</url>
-            <properties/>
+            <properties>
+            		<idegaweb.bundle.include>true</idegaweb.bundle.include>
+            </properties>
         </dependency>
         <dependency>
             <groupId>servletapi</groupId>
@@ -46,7 +68,6 @@
             <version>2.3</version>
             <type>jar</type>
             <url>http://java.sun.com/products/servlet/docs.html</url>
-            <properties/>
         </dependency>
         <dependency>
             <groupId>cos</groupId>
@@ -54,7 +75,9 @@
             <version>05Nov2002</version>
             <type>jar</type>
             <url>http://www.servlets.com/cos/</url>
-            <properties/>
+            <properties>
+            		<idegaweb.bundle.include>true</idegaweb.bundle.include>
+            </properties>
         </dependency>
         <dependency>
             <groupId>jsf</groupId>
@@ -62,8 +85,10 @@
             <version>1.0</version>
             <type>jar</type>
             <url>http://java.sun.com/j2ee/javaserverfaces/</url>
-            <properties/>
-        </dependency>
+            <properties>
+            		<idegaweb.bundle.include>true</idegaweb.bundle.include>
+            </properties>
+        </dependency>        
     </dependencies>
     <build>
         <sourceDirectory>src/java</sourceDirectory>
