@@ -1,17 +1,27 @@
 <project>
     <pomVersion>3</pomVersion>
-  	<extend>${base.project.dir}/base-project.xml</extend>    
     <name>Smile</name>
     <groupId>bundles</groupId>
     <artifactId>net.sourceforge.smile</artifactId>
     <currentVersion>0.3</currentVersion>
     <organization/>
     <inceptionYear>2003</inceptionYear>
-    <shortDescription>Smile - JSF Implementation</shortDescription>
-    <description>Smile is an implementation of JavaServer Faces</description>
+    <shortDescription>Smile is an implementation of JavaServer Faces</shortDescription>
     <issueTrackingUrl>http://issues.idega.is</issueTrackingUrl>
+    <repository>
+        <connection>scm:cvs:ext:idegaweb@einstein.idega.is:/idega/cvs:bundles/com.idega.webface.bundle</connection>
+        <developerConnection>scm:cvs:ext:idegaweb@einstein.idega.is:/idega/cvs:bundles/com.idega.webface.bundle</developerConnection>
+    </repository>
     <versions/>
     <branches/>
+    <mailingLists>
+        <mailingList>
+            <name>${pom.name} Dev List</name>
+        </mailingList>
+        <mailingList>
+            <name>${pom.name} User List</name>
+        </mailingList>
+    </mailingLists>
     <developers>
         <developer>
             <name>Tryggvi Larusson</name>
@@ -25,7 +35,7 @@
         <dependency>
             <groupId>smile</groupId>
             <artifactId>smile</artifactId>
-            <version>0.3.3</version>
+            <version>0.3.2</version>
             <type>jar</type>
             <url>http://smile.sourceforge.net/</url>
             <properties>
@@ -70,7 +80,7 @@
             </properties>
         </dependency>
         <dependency>
-            <groupId>myfaces</groupId>
+            <groupId>jsf</groupId>
             <artifactId>jsf-api</artifactId>
             <version>1.0</version>
             <type>jar</type>
@@ -89,5 +99,15 @@
             </includes>
         </unitTest>
     </build>
+    <reports>
+        <report>maven-tasklist-plugin</report>
+        <report>maven-changelog-plugin</report>
+        <report>maven-developer-activity-plugin</report>
+        <report>maven-simian-plugin</report>
+        <report>maven-jcoverage-plugin</report>
+        <report>maven-faq-plugin</report>
+        <report>maven-file-activity-plugin</report>
+        <report>maven-changes-plugin</report>
+    </reports>
     <properties/>
 </project>

@@ -2,7 +2,8 @@
 
 <projectDescription>
   <name>net.sourceforge.smile</name>
-  <comment>Smile is an implementation of JavaServer Faces</comment>
+  <comment>
+  </comment>
   <projects>
   </projects>
   <buildSpec>
