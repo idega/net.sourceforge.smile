@@ -39,7 +39,6 @@
     <!-- Faces Servlet Mapping -->
 
     <!-- virtual path mapping - Commented out for now, defined in myfaces
-    <!--
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
