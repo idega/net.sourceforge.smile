@@ -1,6 +1,6 @@
 <project>
     <pomVersion>3</pomVersion>
-  	<extend>../com.idega.core.bundle/base-project.xml</extend>    
+  	<extend>${base.project.dir}/base-project.xmlend>    
     <name>Smile</name>
     <groupId>bundles</groupId>
     <artifactId>net.sourceforge.smile</artifactId>
