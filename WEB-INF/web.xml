@@ -6,40 +6,6 @@
 
 <web-app>
 
-    <context-param>
-        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
-        <param-value>client</param-value>
-        <description>
-            State saving method: "client" or "server" (= default)
-            See JSF Specification 2.5.2
-        </description>
-    </context-param>
-
-    <context-param>
-        <param-name>net.sourceforge.myfaces.ALLOW_JAVASCRIPT</param-name>
-        <param-value>true</param-value>
-        <description>
-            This parameter tells MyFaces if javascript code should be allowed in the
-            rendered HTML output.
-            If javascript is allowed, command_link anchors will have javascript code
-            that submits the corresponding form.
-            If javascript is not allowed, the state saving info and nested parameters
-            will be added as url parameters.
-            Default: "true"
-        </description>
-    </context-param>
-
-    <context-param>
-        <param-name>net.sourceforge.myfaces.PRETTY_HTML</param-name>
-        <param-value>true</param-value>
-        <description>
-            If true, rendered HTML code will be formatted, so that it is "human readable".
-            i.e. additional line separators and whitespace will be written, that do not
-            influence the HTML code. 
-            Default: "true"
-        </description>
-    </context-param>
-
 	<context-param>
 		<param-name>net.sourceforge.smile.descriptor.package</param-name>
 		<param-value>net.sourceforge.smile.examples.cbp</param-value>
