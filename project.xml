@@ -1,27 +1,17 @@
 <project>
     <pomVersion>3</pomVersion>
+  	<extend>../com.idega.core.bundle/base-project.xml</extend>    
     <name>Smile</name>
     <groupId>bundles</groupId>
     <artifactId>net.sourceforge.smile</artifactId>
     <currentVersion>0.3</currentVersion>
     <organization/>
     <inceptionYear>2003</inceptionYear>
-    <shortDescription>Smile is an implementation of JavaServer Faces</shortDescription>
+    <shortDescription>Smile - JSF Implementation</shortDescription>
+    <description>Smile is an implementation of JavaServer Faces</description>
     <issueTrackingUrl>http://issues.idega.is</issueTrackingUrl>
-    <repository>
-        <connection>scm:cvs:ext:idegaweb@einstein.idega.is:/idega/cvs:bundles/com.idega.webface.bundle</connection>
-        <developerConnection>scm:cvs:ext:idegaweb@einstein.idega.is:/idega/cvs:bundles/com.idega.webface.bundle</developerConnection>
-    </repository>
     <versions/>
     <branches/>
-    <mailingLists>
-        <mailingList>
-            <name>${pom.name} Dev List</name>
-        </mailingList>
-        <mailingList>
-            <name>${pom.name} User List</name>
-        </mailingList>
-    </mailingLists>
     <developers>
         <developer>
             <name>Tryggvi Larusson</name>
@@ -99,15 +89,5 @@
             </includes>
         </unitTest>
     </build>
-    <reports>
-        <report>maven-tasklist-plugin</report>
-        <report>maven-changelog-plugin</report>
-        <report>maven-developer-activity-plugin</report>
-        <report>maven-simian-plugin</report>
-        <report>maven-jcoverage-plugin</report>
-        <report>maven-faq-plugin</report>
-        <report>maven-file-activity-plugin</report>
-        <report>maven-changes-plugin</report>
-    </reports>
     <properties/>
 </project>
